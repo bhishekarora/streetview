@@ -17,13 +17,17 @@ of the spot.
 
 Lot of work was done and it worked out well.
 
-![My camear](https://github.com/bhishekarora/streetview/blob/master/Street_View_Base/virtualtour/images/bubblescope.jpg)
+![My camera](https://github.com/bhishekarora/streetview/blob/master/Street_View_Base/virtualtour/images/bubblescope.jpg)
+
+So this tool actual did  splitting,geosync,googleintegration for the street view player.
+
+The codebase is from an old windows laptop so java code is contains window based paths, created this for a hackathon and was 
+a **winner** , i am not putting effort now to refactor it because, modern browsers has disabled flash now.
 
 
 ## Prerequisites
 
-The codebase is from an old windows laptop so java code is contains window based paths, created this for a hackathon and was 
-a **winer**
+
 
 Apache2 /var/www/ should be available for testing purpose,in real environment you will push the virtualtour directory in the repo to the target server deployment root.
 
@@ -35,16 +39,26 @@ Java 6 should be installed and the jdk path should be available inside path vari
 ## Steps to make it work.
 
 First Read the Screenshots.doc folder in the repo, you need to take panoramic pictures of the spots either via a 360 degree
-camera or 
-Copy the Street_view_base directory to any of your drive on your system.
+camera or take 4 different photos and stitch them via Hugin software, its a panoramiz stitcher.
+
+
+Copy the Street_view_base directory to any of your drive on your windows system.
 
 Embedd the drive value inside the config.properties (e.g open streetview.jar with winzip and update drive and project name inside config.properties)
 
 Now copy all the source images inside the source images folder( images should have time stamps and gps values)
+
+If you don't have location data on your images, you can us gpx master (IOS app ) for collecting wavepoints and use geosetter to map the images with the wavepoints, check the screen shots doc for more info, it will be easy if you capture images with inbuilt EXIF data.
 
 Run the Streetviewtool.bat and let the program do its work.
 
 Once done , copy the virtualtour directory from this folder and move it to your http server root.
 
 Now open the chrome browser and point your browser to http://localhost/virtualtour , you will see the street view of the images you entered in soure images folder.
+
+## Deployment
+
+Deply it to cloud or your server and enjoy the view.
+
+
 
