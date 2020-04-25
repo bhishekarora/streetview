@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link type="text/css" href="embed/style.css" rel="stylesheet">
+
+		<script type="text/javascript" src="javascript/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=false"></script>
+
+		<!--[if IE]>
+		<script type="text/javascript" src="javascript/jsgooglemap/excanvas.compiled.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="javascript/jsgooglemap/saladoplayer.jsgooglemap.js"></script>
+		<script type="text/javascript" src="javascript/jsgooglemap/saladoplayer.jsgooglemap.radar.js"></script>
+		<script type="text/javascript" src="javascript/jsgooglemap/jsgooglemap_utils.js"></script>
+
+		<script type="text/javascript" src="embed/swfobject.js"></script>
+
+		<script type="text/javascript">
+				var flashvars = {};
+				flashvars.xml = "faridabad.xml";
+				flashvars.tilde = "";
+				var params = {};
+				params.quality = "high";
+				params.scale = "showall";
+				params.autoPlay=true;
+				params.wmode = "window";
+				params.bgcolor = "#89898a";
+				params.devicefont = "false";
+				params.allowfullscreen = "true";
+				params.allowscriptaccess = "sameDomain";
+				swfobject.embedSWF("Player-1.2.3.swf", "player", "90%", "400px", "10.1", "embed/expressInstall.swf", flashvars, params);
+			</script>
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+ <link href="http://www.google.com/css/maia.css" rel="stylesheet">
+	</head>
+
+
+
+
+	
+	
+	
+	<body class="homepage">
+		<div id="site">
+			<div id="header"></div>
+			
+			
+			
+			
+			
+			
+		<div class="maia-nav maia-complex" id="maia-nav-x" role="navigation">
+      <div class="maia-aux">
+      <ul>
+          <li class="active">
+            <a href="index.html" data-g-event="Maia: Site Nav" data-g-action="Maia: Level 1" data-g-label="Overview">Street View of Faridabad</a>
+            
+          </li>
+          <li>
+            <a href="how.html" data-g-event="Maia: Site Nav" data-g-action="Maia: Level 1" data-g-label="how">How he did that ?</a>
+          </li>
+          <li>
+            <a href="where.html" data-g-event="Maia: Site Nav" data-g-action="Maia: Level 1" data-g-label="businessidea">Where is the Money ?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+			
+			
+			
+			<div id="content">
+									<section class="last">
+										<h2>What is street view and how it is made ?</h2>
+										<p><a href="http://google.com/streetview">Street view</a> is the 360 imagery of the world made by Google , these images are captured by Google cameras in 360 direction and stitched with a special software and played on Google maps.
+										
+										<h2>What was the motivation to create a street view ?</h2>
+										
+										<p> Google has its street view which is available in most of the countries but unfortunately India is not one of them.I always wanted to have street view available in India but Google had to no plans to start it soon.So i researched on it and finally came across a recepie which can simulate the Google street view.I wrote some special code which could split and stich my 360 panoramic images captured by my cameras which i fixed on my Car.I went to different parts of the city and captured the pictures and GEO information ( Lattitude/longitude) and finally synched them on to my player which I integrated with Google maps.
+										
+										<h2>Recepie</h2>
+										I used my selfie stick and fixed my Canon ELPH to my Car Wind shield(Top)<br> 
+										<img src="images/cameramount.jpg"/><br>
+										Once pictures are taken i record the GPS coordinates of that waypoint and save it in GPX format.<br>
+										<img src="images/gps.png"/><br>
+										Finally I synched the pictures with the GEO information and used Google maps API to integrate them.<br>
+										<img src="images/googlemaps.png"/><br>
+										
+										I used a panoramic player and integrated all the components together and played it.
+										Thats it !
+										
+										<br>
+										<br>
+										
+										
+										</div>
+			
+			
+			<div id="footer"></div>
+		</div>
+		<!-- this div is needed to support IE -->
+		<div id="radar_div" style="display: none; width: 162px; height: 162px; position: absolute; top: 0; left: 0; padding: 0;">
+			<canvas id="radar_canvas" width="162" height="162"></canvas>
+		</div>
+	</body>
+	
+	<div class="maia-nav maia-complex" id="maia-nav-x" role="navigation">
+	 <div class="maia-aux">
+	 <ul>
+	 </ul>
+	 </div>
+	</div>
+	
+	<div id="footer-wrapper">
+			
+			</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</html>
