@@ -17,7 +17,9 @@ of the spot.
 
 Lot of work was done and it worked out well.
 
-![My camera](https://github.com/bhishekarora/streetview/blob/master/Street_View_Base/virtualtour/images/bubblescope.jpg =200x300)
+
+
+<img src="https://github.com/bhishekarora/streetview/blob/master/Street_View_Base/virtualtour/images/bubblescope.jpg" width="200" height="300px">
 
 So this tool actual did  splitting,geosync,googleintegration for the street view player.
 
